@@ -1,5 +1,7 @@
+mod themes;
+
 use iced::Settings;
 
 fn main() {
-    todo!()
+    println!("hi");
 }

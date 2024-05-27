@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="changes.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1035"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.63403262"
+     inkscape:cx="-98.586749"
+     inkscape:cy="87.287312"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="70px"
+     viewbox-width="512"
+     inkscape:rotation="-2" />
+  <defs
+     id="defs1030" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-30,-28.535738)">
+    <path
+       fill="none"
+       stroke="currentColor"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="25.6826"
+       d="M 158.41334,41.377038 V 272.52105 M 273.98535,156.94904 H 42.841335"
+       id="path1063" />
+    <path
+       fill="none"
+       stroke="currentColor"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="25.6826"
+       d="M 529.18532,415.24002 H 298.0413"
+       id="path1104" />
+    <rect
+       style="fill:currentColor;fill-rule:evenodd;stroke-width:1.54274"
+       id="rect1215"
+       width="25.217821"
+       height="705.13824"
+       x="390.91037"
+       y="-351.48822"
+       transform="matrix(0.71091141,0.70328157,-0.70684913,0.70736434,0,0)"
+       rx="8.5090666"
+       ry="4.4730616" />
+  </g>
+</svg>
