@@ -7,7 +7,7 @@ use iced::{
 
 use super::colors;
 
-#[derive(Default, Debug)]
+#[derive(Default, Debug, Clone, Copy)]
 pub enum Theme {
     #[default]
     Dark,

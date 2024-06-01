@@ -8,10 +8,11 @@ use iced::{
 
 use super::colors;
 
-pub const INTER_FONT: Font = Font::with_name("inter");
+pub const INTER_FONT: Font = Font::with_name("Inter");
+//pub const INTER_FONT_BOLD: Font = Font::with_name("Inter Bold");
 pub const INTER_FONT_BOLD: Font = Font {
     weight: font::Weight::Bold,
-    ..INTER_FONT
+    ..Font::with_name("Inter")
 };
 
 #[derive(Default)]
