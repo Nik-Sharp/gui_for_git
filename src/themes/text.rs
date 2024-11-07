@@ -18,7 +18,9 @@ pub const INTER_FONT_BOLD: Font = Font {
 #[derive(Default)]
 pub enum TextType {
     #[default]
-    Default
+    Default,
+    Addition,
+    Removal
 }
 impl Catalog for Theme {
     type Class<'a> = TextType;
@@ -32,6 +34,12 @@ impl Catalog for Theme {
             Theme::Dark => match *class {
                 TextType::Default => Style {
                     color: Some(colors::OFF_WHITE),
+                },
+                TextType::Addition => Style {
+                    color: Some(colors::DARK_GREEN),
+                },
+                TextType::Removal => Style {
+                    color: Some(colors::RED),
                 },
             },
             Theme::Light => todo!(),

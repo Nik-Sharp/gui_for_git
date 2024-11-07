@@ -9,6 +9,7 @@ pub enum RectType {
     #[default]
     Default,
     Header,
+    ChangeButton { selected: bool }
 }
 impl Catalog for Theme {
     type Class<'a> = RectType;
@@ -25,6 +26,16 @@ impl Catalog for Theme {
                 RectType::Header => Style {
                     color: Some(colors::DARK_GRAY),
                 },
+
+                RectType::ChangeButton { selected } => if selected {
+                    Style {
+                        color: Some(colors::GRAY),
+                    }
+                } else {
+                    Style {
+                        color: Some(colors::DARK_GRAY),
+                    }
+                }
             },
             Theme::Light => todo!(),
         }

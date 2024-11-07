@@ -8,6 +8,7 @@ use iced::{
     Border, Color, Length, Element, Renderer, Size,
 };
 
+
 #[derive(Clone, Copy)]
 pub struct Rectangle<'a, Theme>
 where Theme: Catalog{

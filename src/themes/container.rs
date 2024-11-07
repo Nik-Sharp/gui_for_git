@@ -9,6 +9,8 @@ pub enum ContainerType {
     #[default]
     NoBackground,
     Header,
+    // TODO: Does this name suck, for the sidebar inside the change / history screen
+    InContextSideBar
 }
 
 impl Catalog for Theme {
@@ -23,6 +25,7 @@ impl Catalog for Theme {
             Theme::Dark => match *class {
                 ContainerType::NoBackground => Style::with_background(Style::default(), colors::TRANSPARENT),
                 ContainerType::Header => Style::with_background(Style::default(), colors::DARK_BLACK),
+                ContainerType::InContextSideBar => Style::with_background(Style::default(), colors::BLUE_GRAY),
             },
             Theme::Light => todo!(),
         }

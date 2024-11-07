@@ -4,7 +4,7 @@ use iced::{
 };
 
 use crate::{
-    gui::{Page, PopUp},
+    gui::{Event, Page, PopUp},
     icons::Icon,
     themes::{
         button::ButtonType, container::ContainerType, rectangle::RectType, svg::SvgType, text,
@@ -15,6 +15,7 @@ use crate::{
 };
 
 const ICON_SIZE: u16 = 30;
+
 #[derive(Debug, Clone)]
 pub enum Message {
     PopUpOpen(PopUp),
@@ -111,8 +112,21 @@ impl Header {
             .class(ContainerType::Header)
             .into()
     }
-}
 
+    pub fn update(message: Message) -> Option<Event> {
+        match message {
+    
+            // Send event upstream
+            Message::PopUpOpen(pop_up) => Some(Event::ChangeActivePopUp(Some(pop_up))),
+            Message::PageSwitch(page) => Some(Event::ChangeActivePage(page)),
+    
+            // Don't send event
+            Message::PullOrigin => todo!(),
+            Message::PushOrigin => todo!(),
+            Message::Commit => todo!(),
+        }
+    }
+}
 fn separator<'a>() -> Element<'a, Message> {
     Rectangle::new(3, Length::Fill, 0.0).class(RectType::Header).into()
 }
